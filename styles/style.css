@@ -17,9 +17,27 @@ button {
   border: none;
   cursor: pointer;
 }
-button:hover{
-    background: brown;
-    transition: all 1s;
+button:hover {
+  background: brown;
+  transition: all 1s;
+}
+.section-heading * {
+  max-width: 480px;
+  margin: 0 auto;
+  text-align: center;
+}
+.section-heading h2 {
+  color: #272727;
+  font-size: 30px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+.section-heading p {
+  color: rgba(39, 39, 39, 0.6);
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 0px;
+  margin-bottom: 35px;
 }
 header {
   background: rgba(229, 84, 115, 0.1);
@@ -27,17 +45,17 @@ header {
 .container {
   width: 75%;
   max-width: 1440px;
+  margin: 0 auto;
 }
 .banner {
   display: flex;
   gap: 100px;
   align-items: center;
-  margin: 0 auto;
 }
-.banner-content {
+.banner-text {
   max-width: 530px;
 }
-.banner-content *{
+.banner-text * {
   margin-bottom: 30px;
 }
 
@@ -45,13 +63,45 @@ header {
   width: 100%;
   /* vertical-align: middle; */
 }
-.banner .banner-content h2 {
+.banner .banner-text h2 {
   color: #272727;
   font-size: 60px;
   font-weight: 800;
 }
-.banner .banner-content p {
+.banner .banner-text p {
   color: rgba(39, 39, 39, 0.6);
   font-size: 18px;
   font-weight: 400;
+}
+#feature {
+  margin-top: 170px;
+}
+#feature .section-content {
+  display: flex;
+  align-items: end;
+  gap: 25px;
+}
+#feature .section-content .flower .flower-image {
+  border-radius: 300px 300px 0px 0px;
+  height: 500px;
+  display: flex;
+  align-items: end;
+  padding: 0 50px;
+}
+#feature .section-content .flower p {
+  color: #272727;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  text-decoration-line: underline;
+  margin-top: 30px;
+}
+#feature .section-content .flower .pink {
+  background: rgba(167, 33, 98, 0.15);
+}
+#feature .section-content .flower .pest {
+  background: rgba(5, 151, 160, 0.15);
+}
+#feature .section-content .flower .purple {
+  background: rgba(71, 125, 17, 0.15);
 }
